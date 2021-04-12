@@ -63,7 +63,7 @@ api:
   affinity: {}
 
 ingress:
-  enabled: true
+  enabled: false
   annotations:
     traefik.ingress.kubernetes.io/rule-type: PathPrefixStrip
   host: ""
@@ -71,7 +71,7 @@ ingress:
     ui: /ui/(.*)
     api: /rest/(.*)
     
-routes:
+route:
   enabled: true
   host: ""
   pathPrefix:
