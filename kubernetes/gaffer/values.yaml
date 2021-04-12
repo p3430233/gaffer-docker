@@ -70,6 +70,13 @@ ingress:
   pathPrefix:
     ui: /ui/(.*)
     api: /rest/(.*)
+    
+routes:
+  enabled: true
+  host: ""
+  pathPrefix:
+    ui: /ui/(.*)
+    api: /rest/(.*)     
 
 waitFor:
   graphStatusOk: true
